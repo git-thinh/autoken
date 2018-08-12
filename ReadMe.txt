@@ -1,0 +1,15 @@
+https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://accounts.google.com/o/oauth2/auth?response_type%3Dcode%26client_id%3D962642037870-u8gg10odivorhmn19o3qqq9hlbmtras3.apps.googleusercontent.com%26redirect_uri%3Dhttp://localhost:61422/%26scope%3Dhttps://www.googleapis.com/auth/drive.file%2Bhttps://www.googleapis.com/auth/userinfo.email%2Bhttps://www.googleapis.com/auth/userinfo.profile%2Bhttps://www.googleapis.com/auth/drive.install%26access_type%3Doffline%26approval_prompt%3Dforce%26user_id%26state%3Dthinhtu%26from_login%3D1%26as%3DEtMCAuuxztHYwUVZlwIOoQ&followup=https://accounts.google.com/o/oauth2/auth?response_type%3Dcode%26client_id%3D962642037870-u8gg10odivorhmn19o3qqq9hlbmtras3.apps.googleusercontent.com%26redirect_uri%3Dhttp://localhost:61422/%26scope%3Dhttps://www.googleapis.com/auth/drive.file%2Bhttps://www.googleapis.com/auth/userinfo.email%2Bhttps://www.googleapis.com/auth/userinfo.profile%2Bhttps://www.googleapis.com/auth/drive.install%26access_type%3Doffline%26approval_prompt%3Dforce%26user_id%26state%3Dthinhtu%26from_login%3D1%26as%3DEtMCAuuxztHYwUVZlwIOoQ&ltmpl=nosignup&oauth=1&sarp=1&scc=1#identifier
+
+input id=Email
+input id=next   
+
+
+https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://accounts.google.com/o/oauth2/auth?response_type%3Dcode%26client_id%3D962642037870-u8gg10odivorhmn19o3qqq9hlbmtras3.apps.googleusercontent.com%26redirect_uri%3Dhttp://localhost:61422/%26scope%3Dhttps://www.googleapis.com/auth/drive.file%2Bhttps://www.googleapis.com/auth/userinfo.email%2Bhttps://www.googleapis.com/auth/userinfo.profile%2Bhttps://www.googleapis.com/auth/drive.install%26access_type%3Doffline%26approval_prompt%3Dforce%26user_id%26state%3Dthinhtu%26from_login%3D1%26as%3DEtMCAuuxztHYwUVZlwIOoQ&followup=https://accounts.google.com/o/oauth2/auth?response_type%3Dcode%26client_id%3D962642037870-u8gg10odivorhmn19o3qqq9hlbmtras3.apps.googleusercontent.com%26redirect_uri%3Dhttp://localhost:61422/%26scope%3Dhttps://www.googleapis.com/auth/drive.file%2Bhttps://www.googleapis.com/auth/userinfo.email%2Bhttps://www.googleapis.com/auth/userinfo.profile%2Bhttps://www.googleapis.com/auth/drive.install%26access_type%3Doffline%26approval_prompt%3Dforce%26user_id%26state%3Dthinhtu%26from_login%3D1%26as%3DEtMCAuuxztHYwUVZlwIOoQ&ltmpl=nosignup&oauth=1&sarp=1&scc=1#password
+
+id = Passwd
+id=signIn
+
+
+https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=962642037870-u8gg10odivorhmn19o3qqq9hlbmtras3.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A61422%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.file+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.install&access_type=offline&approval_prompt=force&user_id&state=thinhtu&from_login=1&as=EtMCAuuxztHYwUVZlwIOoQ&authuser=0
+
+id=submit_approve_access
