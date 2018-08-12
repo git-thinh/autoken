@@ -42,3 +42,7 @@ obj/Debug/autoken.csprojResolveAssemblyReference.cache
 obj/Debug/autoken.exe
 obj/Debug/autoken.pdb
 obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/x86/Debug/autoken.pdb
+obj/x86/Debug/autoken.exe
+obj/x86/Debug/autoken.csprojResolveAssemblyReference.cache
+obj/x86/Debug/autoken.csproj.FileListAbsolute.txt
