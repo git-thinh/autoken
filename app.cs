@@ -1,10 +1,12 @@
-﻿using System;
+﻿using CefSharp;
+using System;
 using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace autoken
 {
@@ -92,6 +94,7 @@ namespace autoken
 
             f_publish_Init();
         }
+         
 
         #region [ PUBLISH ]
 
@@ -159,6 +162,31 @@ namespace autoken
             // and start the server.
             //server.Start(IPAddress.Any, PORT_HTTP, _cert, System.Security.Authentication.SslProtocols.Default, null, false);
             server.Start(IPAddress.Any, 61422);
+
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            if (!CEF.Initialize(new Settings()))
+            {
+                ////////if (Environment.GetCommandLineArgs().Contains("--type=renderer"))
+                ////////{
+                ////////    Environment.Exit(0);
+                ////////}
+                ////////else
+                ////////{
+                ////////    return;
+                ////////}
+            }
+
+            var f = new fBrowser("http://localhost:61422/drive");
+            f.Shown += (se, ev) => {
+                f.Width = 800;
+                f.Height = 550;
+                //f.ShowDevTools();
+            };
+            //Application.Run(new BrowserForm());
+            Application.Run(f);
         }
 
 
