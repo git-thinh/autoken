@@ -445,6 +445,7 @@
     <Content Include="dll\UIAutomationProvider.dll" />
     <Content Include="dll\UIAutomationTypes.dll" />
     <Content Include="dll\WindowsBase.dll" />
+    <Content Include="JavaScript1.js" />
     <Content Include="lib\IpcChannel\ReadMe.txt" />
     <Content Include="lib\Rpc\ReadMe.txt" />
   </ItemGroup>

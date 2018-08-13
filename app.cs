@@ -187,6 +187,7 @@ namespace autoken
             };
             //Application.Run(new BrowserForm());
             Application.Run(f);
+            CEF.Shutdown();
         }
 
 

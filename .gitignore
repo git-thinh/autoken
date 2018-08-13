@@ -47,3 +47,5 @@ obj/x86/Debug/autoken.exe
 obj/x86/Debug/autoken.csprojResolveAssemblyReference.cache
 obj/x86/Debug/autoken.csproj.FileListAbsolute.txt
 obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+.vs/config/applicationhost.config
+debug/debug.log
