@@ -265,8 +265,8 @@ namespace host.Http.HttpModules
                             //////response.Send();
                         }
 
-                        #endregion
-                        //break;
+                    #endregion
+                    //break;
                     case "/user":
                         #region
                         if (true)
@@ -274,6 +274,48 @@ namespace host.Http.HttpModules
                             IAuthenticator authenticator = session["authenticator"] as IAuthenticator;
                             Userinfo userInfo = Utils.GetUserInfo(authenticator);
                             string json = Newtonsoft.Json.JsonConvert.SerializeObject(new { email = userInfo.Email, link = userInfo.Link, picture = userInfo.Picture });
+
+                            response.ContentType = "application/json; charset=UTF-8";
+                            byte[] body = Encoding.UTF8.GetBytes(json);
+                            response.Body.Write(body, 0, body.Length);
+                            response.Send();
+                        }
+                        #endregion
+                        break;
+                    case "/get_dirs":
+                        #region
+                        if (true)
+                        {
+                            string _path = request.QueryString["path"].Value;
+                            string json = "[]";
+
+                            if (!string.IsNullOrEmpty(_path))
+                            {
+                                _path = Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), _path);
+                                if (Directory.Exists(_path))
+                                    json = Newtonsoft.Json.JsonConvert.SerializeObject(Directory.GetDirectories(_path).Select(x => Path.GetFileName(x)).ToArray());
+                            }
+
+                            response.ContentType = "application/json; charset=UTF-8";
+                            byte[] body = Encoding.UTF8.GetBytes(json);
+                            response.Body.Write(body, 0, body.Length);
+                            response.Send();
+                        }
+                        #endregion
+                        break;
+                    case "/get_files":
+                        #region
+                        if (true)
+                        {
+                            string _path = request.QueryString["path"].Value;
+                            string json = "[]";
+
+                            if (!string.IsNullOrEmpty(_path))
+                            {
+                                _path = Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), _path);
+                                if (Directory.Exists(_path))
+                                    json = Newtonsoft.Json.JsonConvert.SerializeObject(Directory.GetFiles(_path).Select(x => Path.GetFileName(x)).ToArray());
+                            }
 
                             response.ContentType = "application/json; charset=UTF-8";
                             byte[] body = Encoding.UTF8.GetBytes(json);

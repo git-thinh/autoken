@@ -166,28 +166,17 @@ namespace autoken
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form());
 
-            if (!CEF.Initialize(new Settings()))
-            {
-                ////////if (Environment.GetCommandLineArgs().Contains("--type=renderer"))
-                ////////{
-                ////////    Environment.Exit(0);
-                ////////}
-                ////////else
-                ////////{
-                ////////    return;
-                ////////}
-            }
-
-            var f = new fBrowser("http://localhost:61422/drive");
-            f.Shown += (se, ev) => {
-                f.Width = 800;
-                f.Height = 550;
-                //f.ShowDevTools();
-            };
-            //Application.Run(new BrowserForm());
-            Application.Run(f);
-            CEF.Shutdown();
+            //if (!CEF.Initialize(new Settings())) { }
+            //var f = new fBrowser("http://localhost:61422/drive");
+            //f.Shown += (se, ev) => {
+            //    f.Width = 800;
+            //    f.Height = 550;
+            //    //f.ShowDevTools();
+            //};
+            //Application.Run(f);
+            //CEF.Shutdown();
         }
 
 
